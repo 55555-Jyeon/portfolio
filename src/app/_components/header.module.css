@@ -1,0 +1,30 @@
+.container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20%;
+  z-index: 100;
+}
+.container p {
+  color: #005134;
+  font-weight: 700;
+}
+.logo {
+  font-size: 12px;
+}
+.menu {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 0.8px solid #005134;
+  font-size: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

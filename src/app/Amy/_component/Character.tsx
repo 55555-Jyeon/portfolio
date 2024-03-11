@@ -56,7 +56,7 @@ const Word = ({ children, range, progress }: WordProps) => {
       {characters.map((character, idx) => {
         const start = range[0] + step * idx;
         const end = range[0] + step * (idx + 1);
-        console.log(start, end);
+        // console.log(start, end);
         return (
           <Character key={idx} range={[start, end]} progress={progress}>
             {character}

@@ -1,14 +1,47 @@
+.container {
+  position: relative;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: #fffcec;
+  overflow: hidden;
+}
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
-  background-color: black;
-  color: white;
+  min-height: calc(100dvh - 60px);
+}
+.ImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+.profile {
+  width: 20%;
+  height: fit-content;
 }
 
-.main div {
-  height: 100vh;
+.textbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 30%;
+  margin-top: 10px;
+}
+.textbox p {
+  font-size: 10px;
+  font-weight: 400;
+  color: #005134;
+}
+.copyright {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 8px;
+  font-weight: 400;
+  color: #005134;
 }
