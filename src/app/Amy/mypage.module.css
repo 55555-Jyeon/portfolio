@@ -1,12 +1,40 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
   padding: 6rem;
   min-height: 100vh;
 }
-
-.main div {
-  height: 100vh;
+.textbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 105%;
+  margin-top: 80px;
+}
+.textbox span {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+.value {
+  font-size: 80px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.ImageBg {
+  width: 100vw;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(240deg, #feea7e, #fdd93b);
+}
+.ImageContainer {
+  width: 70%;
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.ImageContainer img {
 }

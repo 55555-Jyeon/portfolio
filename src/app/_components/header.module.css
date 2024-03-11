@@ -12,11 +12,11 @@
   z-index: 100;
 }
 .container p {
-  color: #005134;
   font-weight: 700;
 }
 .logo {
   font-size: 12px;
+  cursor: pointer;
 }
 .menu {
   width: 38px;
