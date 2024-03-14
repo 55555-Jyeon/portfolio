@@ -1,14 +1,46 @@
 "use client";
 
 import style from "./mypage.module.css";
-import Image from "next/image";
-import profile from "../../../public/profile.jpg";
 import Characters from "./_component/Character";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const paragraph =
   "hello, my name is Amy! This is my portfolio website, created by NextJS and typescript.";
-const transition = { duration: 1.2, ease: [0.6, 0.01, -0.05, 0.9] };
+const transition = { duration: 1, ease: "easeInOut" };
+
+const firstWord = {
+  initial: { y: 0, opacity: 0 },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delayChildren: 0.6,
+      staggerChildren: 0.04,
+      staggerDirection: -1,
+    },
+  },
+};
+
+const secondWord = {
+  initial: { y: 0, opacity: 0 },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delayChildren: 0.6,
+      staggerChildren: 0.04,
+      staggerDirection: 1,
+    },
+  },
+};
+
+const letter = {
+  initial: { y: "400px", opacity: 0 },
+  animate: {
+    y: 0,
+    opacity: 1,
+  },
+};
 
 export default function Mypage() {
   return (
@@ -18,38 +50,50 @@ export default function Mypage() {
       exit="exit"
       className={style.main}
     >
-      <motion.div initial={{ opacity: 0 }} className={style.textbox}>
+      <motion.div
+        initial={{ opacity: 0, y: "20px" }}
+        animate={{
+          opacity: 1,
+          y: "20px",
+          transition: { delay: 1.2, ...transition },
+        }}
+        className={style.textbox}
+      >
         <span>JUYEON OH</span>
         <span>FE DEVELOPER</span>
       </motion.div>
-      <motion.p initial={{ opacity: 0 }} className={style.value}>
-        <span>A</span>
-        <span>g</span>
-        <span>i</span>
-        <span>l</span>
-        <span>e</span>
-        <span className={style.blank} />
-        <span>a</span>
-        <span>n</span>
-        <span>d</span>
-        <span className={style.blank} />
-        <span>m</span>
-        <span>o</span>
-        <span>r</span>
-        <span>e</span>
-        <span className={style.blank} />
-        <span>L</span>
-        <span>e</span>
-        <span>a</span>
-        <span>n</span>
-      </motion.p>
+      <motion.div className={style.value}>
+        <motion.span variants={firstWord} initial="initial" animate="animate">
+          <motion.span variants={letter}>A</motion.span>
+          <motion.span variants={letter}>g</motion.span>
+          <motion.span variants={letter}>i</motion.span>
+          <motion.span variants={letter}>l</motion.span>
+          <motion.span variants={letter}>e</motion.span>
+          <motion.span className={style.blank} />
+          <motion.span variants={letter}>a</motion.span>
+          <motion.span variants={letter}>n</motion.span>
+          <motion.span variants={letter}>d</motion.span>
+          <motion.span className={style.blank} />
+        </motion.span>
+        <motion.span variants={secondWord} initial="initial" animate="animate">
+          <motion.span variants={letter}>m</motion.span>
+          <motion.span variants={letter}>o</motion.span>
+          <motion.span variants={letter}>r</motion.span>
+          <motion.span variants={letter}>e</motion.span>
+          <motion.span className={style.blank} />
+          <motion.span variants={letter}>L</motion.span>
+          <motion.span variants={letter}>e</motion.span>
+          <motion.span variants={letter}>a</motion.span>
+          <motion.span variants={letter}>n</motion.span>
+        </motion.span>
+      </motion.div>
       <div className={style.ImageBg}>
         <motion.div
           initial={{ y: "-50%", width: 296, height: 356 }}
           animate={{
             y: 0,
             width: "100vw",
-            height: window.innerWidth > 1440 ? 600 : 300,
+            height: 600,
             transition: { delay: 0.2, ...transition },
           }}
           className={style.ImageContainer}
