@@ -26,9 +26,6 @@ export default function Home() {
           <p>JUYEON OH</p>
           <p>FE DEVELOPER</p>
         </motion.div>
-        <p className={style.copyright}>
-          copyright &copy; all rights reserved to juyeonOH
-        </p>
       </main>
     </AnimatePresence>
   );

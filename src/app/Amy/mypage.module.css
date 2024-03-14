@@ -6,3 +6,48 @@
   padding: 6rem;
   min-height: 100vh;
 }
+.title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 160%;
+  word-break: keep-all;
+  padding: 10% 0;
+}
+.title span {
+  background-color: #feea7e;
+}
+.textWrapper {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10% 0;
+}
+.subTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 160%;
+  word-break: keep-all;
+  padding: 10% 0 1% 40px;
+}
+.iconWrapper {
+  margin: 10% 0 8%;
+}
+.iconWrapper p {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10% 0;
+  text-align: center;
+}
+.iconWrapper div {
+  display: flex;
+  flex-direction: row;
+}
+.icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  margin: 0 20px;
+}

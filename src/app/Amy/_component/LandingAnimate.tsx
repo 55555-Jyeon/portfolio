@@ -10,6 +10,7 @@ export default function LandingAnimate() {
       y: 0,
       opacity: 1,
       transition: {
+        delay: 0.8,
         delayChildren: 0.6,
         staggerChildren: 0.04,
         staggerDirection: -1,
@@ -23,6 +24,7 @@ export default function LandingAnimate() {
       y: 0,
       opacity: 1,
       transition: {
+        delay: 0.8,
         delayChildren: 0.6,
         staggerChildren: 0.04,
         staggerDirection: 1,
@@ -44,7 +46,7 @@ export default function LandingAnimate() {
         initial={{ opacity: 0, y: 20 }}
         animate={{
           opacity: 1,
-          y: 20,
+          y: 0,
           transition: { delay: 1.2, ...transition },
         }}
         className={style.textbox}
@@ -53,7 +55,7 @@ export default function LandingAnimate() {
         <span>FE DEVELOPER</span>
       </motion.div>
       <motion.div className={style.value}>
-        <motion.span variants={firstWord} initial="initial" animate="animate">
+        <motion.span variants={firstWord}>
           <motion.span variants={letter}>A</motion.span>
           <motion.span variants={letter}>g</motion.span>
           <motion.span variants={letter}>i</motion.span>
@@ -83,7 +85,7 @@ export default function LandingAnimate() {
           animate={{
             y: 0,
             width: "100dvw",
-            height: 600,
+            height: 1000,
             transition: { delay: 0.2, ...transition },
           }}
           className={style.ImageContainer}

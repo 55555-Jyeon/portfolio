@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100dvh - 60px);
+  height: calc(100dvh - 100px);
 }
 .ImageContainer {
   display: flex;
@@ -30,13 +30,5 @@
 }
 .textbox p {
   font-size: 10px;
-  font-weight: 400;
-}
-.copyright {
-  position: absolute;
-  bottom: 5px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 8px;
   font-weight: 400;
 }

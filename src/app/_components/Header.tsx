@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <nav className={style.container}>
       <p className={style.logo} onClick={() => router.push("/")}>
-        JUYEON OH
+        @55555-YEON
       </p>
       <p className={style.menu}>menu</p>
     </nav>

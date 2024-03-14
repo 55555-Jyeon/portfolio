@@ -7,7 +7,6 @@ import { motion, MotionValue, useScroll, useTransform } from "framer-motion";
 type Props = {
   value: string;
 };
-
 type WordProps = {
   children: string;
   range: number[];
@@ -25,9 +24,7 @@ export default function Characters({ value }: Props) {
     target: element,
     offset: ["start 0.9", "start 0.25"],
   });
-
-  // split paragraph
-  const words = value.split(" ");
+  const words = value.split(" "); // split paragraph
 
   return (
     <p ref={element} className={style.words}>
@@ -45,12 +42,9 @@ export default function Characters({ value }: Props) {
 }
 
 const Word = ({ children, range, progress }: WordProps) => {
-  // 알파벳별 animation
-  const characters = children.split("");
-  // 알파벳별 길이 구하기
-  const amount = range[1] - range[0];
-  // 단어별 길이 구하기
-  const step = amount / children.length;
+  const characters = children.split(""); // 알파벳별 animation
+  const amount = range[1] - range[0]; // 알파벳별 길이 구하기
+  const step = amount / children.length; // 단어별 길이 구하기
   return (
     <span className={style.word}>
       {characters.map((character, idx) => {
