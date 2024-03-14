@@ -22,19 +22,22 @@
   font-weight: 600;
   margin-bottom: 30px;
 }
+.blank {
+  padding: 0 12px;
+}
+
 .ImageBg {
-  width: 100vw;
-  height: 600px;
   display: flex;
   justify-content: center;
-  background: linear-gradient(240deg, #feea7e, #fdd93b);
+  /* background: linear-gradient(240deg, #feea7e, #fdd93b); */
 }
 .ImageContainer {
-  width: 70%;
-  height: 600px;
-  overflow: hidden;
   display: flex;
   justify-content: center;
+  overflow: hidden;
+  transition: all 0.6s ease-in-out;
 }
-.ImageContainer img {
+.profile {
+  width: inherit;
+  height: inherit;
 }

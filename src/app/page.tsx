@@ -13,11 +13,9 @@ export default function Home() {
     <AnimatePresence mode="wait">
       <main className={style.main}>
         <div className={style.ImageContainer}>
-          <motion.div
-            onClick={() => router.push("/Amy")}
-            whileHover={{ scale: 1.1 }}
-          >
+          <motion.div whileHover={{ scale: 1.1 }}>
             <Image
+              onClick={() => router.push("/Amy")}
               src={profile}
               className={style.profile}
               alt="profile image"
