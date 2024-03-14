@@ -6,37 +6,3 @@
   padding: 6rem;
   min-height: 100vh;
 }
-.textbox {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 110%;
-  margin-top: 80px;
-}
-.textbox span {
-  font-size: 10px;
-  margin-bottom: 10px;
-}
-.value {
-  font-size: 80px;
-  font-weight: 600;
-  margin-bottom: 30px;
-}
-.blank {
-  padding: 0 12px;
-}
-
-.ImageBg {
-  display: flex;
-  justify-content: center;
-  /* background: linear-gradient(240deg, #feea7e, #fdd93b); */
-}
-.ImageContainer {
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-}
-.profile {
-  width: inherit;
-  height: inherit;
-}
