@@ -6,11 +6,17 @@ import Body from "./_component/Body";
 import Footer from "./_component/Footer";
 import Thumbnail from "./_component/Thumbnail";
 
+interface LinkState {
+  isActive: boolean;
+  index: number;
+}
+
 export default function Navbar() {
-  const [selectedLink, setSelectedLink] = useState({
+  const [selectedLink, setSelectedLink] = useState<LinkState>({
     isActive: false,
     index: 0,
   });
+
   return (
     <motion.div
       variants={height}
@@ -21,10 +27,13 @@ export default function Navbar() {
     >
       <div className={style.wrapper}>
         <div className={style.contents}>
-          <Body />
+          <Body selectedLink={selectedLink} setSelectedLink={setSelectedLink} />
           <Footer />
         </div>
-        <Thumbnail />
+        <Thumbnail
+          selectedLink={selectedLink}
+          isActive={selectedLink.isActive}
+        />
       </div>
     </motion.div>
   );

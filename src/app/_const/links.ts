@@ -28,6 +28,6 @@ export const navLinks: TNavLink[] = [
   {
     title: "About_Me",
     href: "/",
-    src: "/images/menu05.jpeg",
+    src: "/images/menu05.jpg",
   },
 ];
