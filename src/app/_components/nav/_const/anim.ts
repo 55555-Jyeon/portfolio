@@ -1,6 +1,34 @@
-const transition = { duration: 1, ease: [0.76, 0, 0.24, 1] };
+type Transition = {
+  duration: number;
+  ease?: number[];
+};
 
-export const opacity = {
+type Animation = {
+  // any : Any CSS property
+  initial: {
+    [key: string]: any;
+  };
+  open?: {
+    [key: string]: any;
+    transition: Transition;
+  };
+  enter?: {
+    [key: string]: any;
+    transition: Transition;
+  };
+  exit?: {
+    [key: string]: any;
+    transition: Transition;
+  };
+  closed?: {
+    [key: string]: any;
+    transition: Transition;
+  };
+};
+
+const transition: Transition = { duration: 1, ease: [0.76, 0, 0.24, 1] };
+
+export const opacity: Animation = {
   initial: {
     opacity: 0,
   },
@@ -14,7 +42,7 @@ export const opacity = {
   },
 };
 
-export const height = {
+export const height: Animation = {
   initial: {
     height: 0,
   },
@@ -28,7 +56,7 @@ export const height = {
   },
 };
 
-export const background = {
+export const background: Animation = {
   initial: {
     height: 0,
   },
@@ -42,7 +70,7 @@ export const background = {
   },
 };
 
-export const blur = {
+export const blur: Animation = {
   initial: {
     filter: "blur(0px)",
     opacity: 1,
@@ -59,7 +87,7 @@ export const blur = {
   },
 };
 
-export const translate = {
+export const translate: Animation = {
   initial: {
     y: "100%",
     opacity: 0,

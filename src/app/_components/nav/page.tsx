@@ -3,6 +3,7 @@ import style from "./navbar.module.css";
 import { motion } from "framer-motion";
 import { height } from "./_const/anim";
 import Body from "./_component/Body";
+import Footer from "./_component/Footer";
 
 export default function Navbar() {
   const [selectedLink, setSelectedLink] = useState({
@@ -20,7 +21,7 @@ export default function Navbar() {
       <div className={style.wrapper}>
         <div className={style.contents}>
           <Body />
-          {/* <Footer /> */}
+          <Footer />
         </div>
         {/* <Image /> */}
       </div>

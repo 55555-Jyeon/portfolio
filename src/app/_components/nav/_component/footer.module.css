@@ -5,6 +5,7 @@
   font-size: 12px;
   text-transform: uppercase;
   margin-top: 40px;
+  padding-left: 6rem;
 }
 .footer ul {
   width: 50%;
@@ -14,7 +15,7 @@
   padding: 0;
 }
 .footer li span {
-  color: #9f9689;
+  color: #888;
 }
 
 @media only screen and (min-width: 1000px) {

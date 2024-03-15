@@ -13,7 +13,7 @@ export default function Footer() {
           animate="enter"
           exit="exit"
         >
-          <span>Made by:</span>Studio Lumio
+          <span>Made by:</span>Juyeon OH
         </motion.li>
       </ul>
       <ul>
@@ -24,7 +24,7 @@ export default function Footer() {
           animate="enter"
           exit="exit"
         >
-          <span>Typography:</span> Google Fonts
+          <span>GitHub:</span> @55555-Jyeon
         </motion.li>
       </ul>
       <ul>
@@ -35,7 +35,7 @@ export default function Footer() {
           animate="enter"
           exit="exit"
         >
-          <span>Images:</span> Freepik, Envato
+          <span>Velog:</span> @55555-jyeon
         </motion.li>
       </ul>
       <ul>
@@ -46,16 +46,7 @@ export default function Footer() {
           animate="enter"
           exit="exit"
         >
-          Privacy Policy
-        </motion.li>
-        <motion.li
-          custom={[0.3, 0]}
-          variants={translate}
-          initial="initial"
-          animate="enter"
-          exit="exit"
-        >
-          Terms & Conditions
+          <span>Email:</span> jyeon380516@gmail.com
         </motion.li>
       </ul>
     </div>

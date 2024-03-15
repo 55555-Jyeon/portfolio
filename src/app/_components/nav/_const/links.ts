@@ -1,37 +1,33 @@
-export const navLinks = [
+export type TNavLink = {
+  title: string;
+  href: string;
+  src: string;
+};
+
+export const navLinks: TNavLink[] = [
   {
     title: "Home",
     href: "/",
-    src: "",
+    src: "/images/menu01.jpeg",
   },
   {
     title: "Projects",
     href: "/",
-    src: "",
+    src: "/images/menu02.jpeg",
   },
   {
     title: "Skills",
     href: "/",
-    src: "",
+    src: "/images/menu03.jpeg",
   },
   {
-    title: "About Me",
+    title: "Developer_Value",
     href: "/about",
-    src: "",
+    src: "/images/menu04.jpeg",
   },
   {
-    title: "Personal Info",
+    title: "About_Me",
     href: "/",
-    src: "",
-  },
-  {
-    title: "Timeline",
-    href: "/",
-    src: "",
-  },
-  {
-    title: "Contact",
-    href: "/",
-    src: "",
+    src: "/images/menu05.jpeg",
   },
 ];
