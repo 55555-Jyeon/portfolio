@@ -26,6 +26,20 @@ type Animation = {
   };
 };
 
+type ByCharacter = {
+  initial: {
+    [key: string]: any;
+  };
+  enter: (i: number[]) => {
+    [key: string]: any;
+    transition: Transition;
+  };
+  exit: (i: number[]) => {
+    [key: string]: any;
+    transition: Transition;
+  };
+};
+
 const transition: Transition = { duration: 1, ease: [0.76, 0, 0.24, 1] };
 
 export const opacity: Animation = {
@@ -87,19 +101,19 @@ export const blur: Animation = {
   },
 };
 
-export const translate: Animation = {
+export const translate: ByCharacter = {
   initial: {
     y: "100%",
     opacity: 0,
   },
-  enter: {
+  enter: (i) => ({
     y: 0,
     opacity: 1,
-    transition: { duration: 1, ease: [0.76, 0, 0.24, 1] },
-  },
-  exit: {
+    transition: { duration: 1, delay: i[0] },
+  }),
+  exit: (i) => ({
     y: "100%",
-    opacity: 0,
-    transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1] },
-  },
+    opacity: 1,
+    transition: { duration: 0.7, delay: i[1] },
+  }),
 };

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { height } from "./_const/anim";
 import Body from "./_component/Body";
 import Footer from "./_component/Footer";
+import Thumbnail from "./_component/Thumbnail";
 
 export default function Navbar() {
   const [selectedLink, setSelectedLink] = useState({
@@ -23,7 +24,7 @@ export default function Navbar() {
           <Body />
           <Footer />
         </div>
-        {/* <Image /> */}
+        <Thumbnail />
       </div>
     </motion.div>
   );

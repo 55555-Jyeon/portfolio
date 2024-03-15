@@ -1,6 +1,9 @@
 .nav {
   position: absolute;
   width: 100dvw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fffcec;
   box-shadow: 2px 10px 15px 0px #f4f1e1;
   overflow: hidden;

@@ -12,7 +12,7 @@ export default function Body() {
     for (let i = 0; i < title.length; i++) {
       const character = title[i];
 
-      // _ 문자가 나타날 때마다 공백으로 대체
+      // _(underscore) → replace to blank
       if (character === "_") {
         characters.push(
           <motion.span
