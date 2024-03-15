@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import Navbar from "./nav/page";
 import { opacity } from "../_const/anim";
+import { Tooltip } from "@chakra-ui/react";
 
 export default function Header() {
   const router = useRouter();
@@ -44,12 +45,12 @@ export default function Header() {
           animate={isActive ? "closed" : "open"}
           className={style.contact}
         >
-          <Link href="#">
+          <Tooltip label="010-6363-3087" fontSize="md">
             <Phone color="#005134" size={24} strokeWidth={1.8} />
-          </Link>
-          <Link href="#">
+          </Tooltip>
+          <Tooltip label="kakao: verita98" fontSize="md">
             <MessageCircle color="#005134" size={24} strokeWidth={1.8} />
-          </Link>
+          </Tooltip>
         </motion.div>
       </nav>
       <AnimatePresence mode="wait">{isActive && <Navbar />}</AnimatePresence>

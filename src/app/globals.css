@@ -86,8 +86,8 @@ body {
 }
 
 body {
-  color: #005134;
-  background-color: #fffcec;
+  color: #005134 !important;
+  background-color: #fffcec !important;
 }
 
 a {
