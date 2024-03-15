@@ -7,7 +7,7 @@ import { Phone, MessageCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import Navbar from "./nav/page";
-import { opacity } from "./nav/_const/anim";
+import { opacity } from "../_const/anim";
 
 export default function Header() {
   const router = useRouter();

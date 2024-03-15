@@ -1,3 +1,7 @@
+export const ValueTitle = "Agile_and_More_Lean";
+export const FrontValueTitle = "Agile and ";
+export const BackValueTitle = " more Lean";
+
 export const DeveloperValue =
   "안녕하세요, 효율적인 개발을 위해 협업을 중시하는 개발자 오주연입니다.";
 export const Desc =

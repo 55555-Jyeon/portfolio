@@ -4,7 +4,7 @@ import style from "./mypage.module.css";
 import { motion } from "framer-motion";
 import Characters from "./_component/Character";
 import LandingAnimate from "./_component/LandingAnimate";
-import { Desc, One, Three, Two } from "./_consts/DeveloperValue";
+import { Desc, One, Three, Two } from "../_const/DeveloperValue";
 import Link from "next/link";
 
 export default function Mypage() {

@@ -1,4 +1,4 @@
-import { translate } from "../_const/anim";
+import { translate } from "@/app/_const/anim";
 import style from "./footer.module.css";
 import { motion } from "framer-motion";
 

@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 82%;
-  margin-top: 80px;
+  width: 70%;
+  margin: 80px 15% 0;
 }
 .textbox span {
   font-size: 10px;
@@ -13,6 +13,8 @@
   font-size: 5rem;
   font-weight: 600;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
 }
 .blank {
   padding: 0 12px;

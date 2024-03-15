@@ -1,3 +1,5 @@
+import { Variants } from "framer-motion";
+
 type Transition = {
   duration: number;
   ease?: number[];
@@ -40,7 +42,7 @@ type ByCharacter = {
   };
 };
 
-const transition: Transition = { duration: 1, ease: [0.76, 0, 0.24, 1] };
+export const transition: Transition = { duration: 1, ease: [0.76, 0, 0.24, 1] };
 
 export const opacity: Animation = {
   initial: {
@@ -113,7 +115,42 @@ export const translate: ByCharacter = {
   }),
   exit: (i) => ({
     y: "100%",
-    opacity: 1,
+    opacity: 0,
     transition: { duration: 0.7, delay: i[1] },
   }),
+};
+
+// mypage: landingAnimation
+export const FrontValue: Variants = {
+  initial: { y: 0, opacity: 0 },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.8,
+      delayChildren: 0.6,
+      staggerChildren: 0.04,
+      staggerDirection: -1,
+    },
+  },
+};
+export const BackValue: Variants = {
+  initial: { y: 0, opacity: 0 },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.8,
+      delayChildren: 0.6,
+      staggerChildren: 0.04,
+      staggerDirection: 1,
+    },
+  },
+};
+const letter: Variants = {
+  initial: { y: 400, opacity: 0 },
+  animate: {
+    y: 0,
+    opacity: 1,
+  },
 };

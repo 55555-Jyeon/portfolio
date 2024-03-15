@@ -1,7 +1,7 @@
 import { useState } from "react";
 import style from "./navbar.module.css";
 import { motion } from "framer-motion";
-import { height } from "./_const/anim";
+import { height } from "@/app/_const/anim";
 import Body from "./_component/Body";
 import Footer from "./_component/Footer";
 import Thumbnail from "./_component/Thumbnail";
