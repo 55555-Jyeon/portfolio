@@ -45,11 +45,27 @@ export default function Header() {
           animate={isActive ? "closed" : "open"}
           className={style.contact}
         >
-          <Tooltip label="010-6363-3087" fontSize="md">
-            <Phone color="#005134" size={24} strokeWidth={1.8} />
+          <Tooltip
+            label="010-6363-3087"
+            fontSize="sm"
+            bg="#005134"
+            color={"#fff"}
+            hasArrow
+            openDelay={200}
+            closeDelay={500}
+          >
+            <Phone color="#005134" size={16} strokeWidth={1.2} />
           </Tooltip>
-          <Tooltip label="kakao: verita98" fontSize="md">
-            <MessageCircle color="#005134" size={24} strokeWidth={1.8} />
+          <Tooltip
+            label="kakao: verita98"
+            fontSize="sm"
+            bg="#005134"
+            color={"#fff"}
+            hasArrow
+            openDelay={200}
+            closeDelay={500}
+          >
+            <MessageCircle color="#005134" size={16} strokeWidth={1.2} />
           </Tooltip>
         </motion.div>
       </nav>

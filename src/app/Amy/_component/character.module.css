@@ -1,14 +1,14 @@
 .words {
-  max-width: 80%;
-  font-size: 1.6rem;
-  padding: 40px;
+  max-width: 90%;
+  font-size: 1.4vw;
+  padding: 8%;
   display: flex;
   flex-wrap: wrap;
   word-break: keep-all;
   line-height: 1.3;
 }
 .word {
-  margin: 12px 12px 0 0;
+  margin: 1% 1% 0 0;
   position: relative;
 }
 .shadow {

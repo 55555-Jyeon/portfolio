@@ -13,12 +13,25 @@
 .body p {
   margin: 0px;
   display: flex;
-  font-size: 28px;
+  font-size: 24px;
   padding-right: 30px;
   padding-top: 10px;
   font-weight: 300;
 }
 
+/* smaller mobile */
+@media screen and (max-width: 480px) {
+  .body {
+    margin-top: 20px;
+  }
+  .body p {
+    font-size: 16px;
+  }
+}
+/* larger smartphones & tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+/* larger than 1000 */
 @media screen and (min-width: 1000px) {
   .body {
     max-width: 1200px;

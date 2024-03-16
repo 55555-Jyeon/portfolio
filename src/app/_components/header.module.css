@@ -1,3 +1,4 @@
+/* 1920 standard */
 .container {
   position: relative;
   top: 0;
@@ -12,10 +13,10 @@
   z-index: 100;
 }
 .container p {
-  font-weight: 700;
+  font-size: 12px;
 }
 .logo {
-  font-size: 14px;
+  font-weight: 700;
   cursor: pointer;
 }
 .el {
@@ -37,7 +38,7 @@
 }
 /* hamburger menu */
 .burger {
-  width: 22.5px;
+  width: 18px;
   position: relative;
   pointer-events: none;
 }
@@ -72,4 +73,58 @@
 }
 .contact svg:nth-of-type(1) {
   margin-right: 14px;
+}
+
+/* smaller mobile */
+@media screen and (max-width: 480px) {
+  .container {
+    height: 26px;
+  }
+  .container p {
+    font-size: 8px;
+  }
+  .burger {
+    width: 12px;
+  }
+  .burger::after {
+    top: -2px;
+  }
+  .burger::before {
+    top: 2px;
+  }
+  .burgerActive::after {
+    transform: rotate(45deg);
+    top: 1px;
+  }
+  .burgerActive::before {
+    transform: rotate(-45deg);
+    top: 2px;
+  }
+  .label {
+    margin-top: 1px;
+  }
+  .contact {
+    visibility: hidden;
+  }
+}
+/* larger smartphones & tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    height: 40px;
+  }
+  .container p {
+    font-size: 10px;
+  }
+  .contact {
+    visibility: hidden;
+  }
+}
+/* larger tablets & laptop & small desktops */
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+}
+/* larger desktops & monitors */
+@media screen and (min-width: 1280px) {
+}
+/* larger than standard */
+@media screen and (min-width: 1921px) {
 }

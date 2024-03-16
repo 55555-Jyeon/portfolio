@@ -24,7 +24,7 @@ const LandingAnimate = () => {
       <motion.div
         className={style.value}
         animate={{
-          transition: { delay: 0.8 },
+          transition: { delay: 0.8, ...transition },
         }}
       >
         {getCharacter(ValueTitle)}
@@ -35,7 +35,7 @@ const LandingAnimate = () => {
           animate={{
             y: 0,
             width: "100dvw",
-            height: 1000,
+            height: 600,
             transition: { delay: 0.2, ...transition },
           }}
           className={style.ImageContainer}

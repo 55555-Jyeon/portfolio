@@ -9,7 +9,7 @@
   overflow-y: scroll;
 }
 .title {
-  font-size: 2.2rem;
+  font-size: 2vw;
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 160%;
@@ -24,21 +24,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10% 0;
+  margin: 10%;
 }
 .subTitle {
-  font-size: 2rem;
+  font-size: 2vw;
   font-weight: 600;
   letter-spacing: 1px;
   line-height: 160%;
   word-break: keep-all;
-  padding: 10% 0 1% 40px;
+  padding-top: 10%;
 }
 .iconWrapper {
   margin: 10% 0 8%;
 }
 .iconWrapper p {
-  font-size: 24px;
+  font-size: 1.4vw;
   font-weight: 600;
   padding: 10% 0;
   text-align: center;
@@ -48,8 +48,8 @@
   flex-direction: row;
 }
 .icon {
-  width: 70px;
-  height: 70px;
-  border-radius: 20px;
-  margin: 0 20px;
+  width: 3.6vw;
+  height: 3.6vw;
+  border-radius: 1vw;
+  margin: 0 1.3vw;
 }

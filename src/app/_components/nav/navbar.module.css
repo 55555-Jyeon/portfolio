@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   background-color: #fffcec;
-  box-shadow: 2px 10px 15px 0px #f4f1e1;
+  box-shadow: 2px 10px 15px 0px rgba(0, 0, 0, 0.06);
   overflow: hidden;
   z-index: 100;
 }
@@ -18,4 +18,26 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+/* smaller mobile */
+@media screen and (max-width: 480px) {
+  .wrapper {
+    margin-left: 16px;
+    margin-bottom: 26px;
+  }
+}
+/* larger smartphones & tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .wrapper {
+    margin-left: 20px;
+    margin-bottom: 36px;
+  }
+}
+/* larger tablets & laptop & small desktops */
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  .wrapper {
+    margin-left: 26px;
+    margin-bottom: 36px;
+  }
 }

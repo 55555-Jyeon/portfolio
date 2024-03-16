@@ -1,9 +1,10 @@
+/* 1920 standard */
 .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100dvh - 100px);
+  height: calc(100dvh - 80px);
 }
 .ImageContainer {
   display: flex;
@@ -31,4 +32,53 @@
 .textbox p {
   font-size: 10px;
   font-weight: 400;
+}
+
+/* smaller mobile */
+@media screen and (max-width: 480px) {
+  .main {
+    height: calc(100dvh - 34px);
+  }
+  .ImageContainer {
+    width: 120px;
+    height: 145px;
+  }
+  .profile {
+    width: 120px;
+    height: inherit;
+  }
+  .textbox {
+    width: 120px;
+    margin-top: 2px;
+  }
+  .textbox p {
+    font-size: 4px;
+  }
+}
+/* larger smartphones & tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .main {
+    height: calc(100dvh - 50px);
+  }
+  .ImageContainer {
+    width: 200px;
+    height: 240px;
+  }
+  .profile {
+    width: 200px;
+    height: inherit;
+  }
+  .textbox {
+    width: 200px;
+    margin-top: 6px;
+  }
+  .textbox p {
+    font-size: 6px;
+  }
+}
+/* larger tablets & laptop & small desktops */
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+}
+/* larger desktops & monitors */
+@media screen and (min-width: 1280px) {
 }
