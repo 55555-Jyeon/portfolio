@@ -35,28 +35,28 @@ export default function Mypage() {
           <Link href="https://github.com/55555-Jyeon">
             <div
               className={style.icon}
-              style={{ background: "url(/github.png) center / contain" }}
+              style={{ background: "url(/icons/github.png) center / contain" }}
             />
           </Link>
           <Link href="https://www.figma.com/file/IIvWP43UFboHBftgWkXxsA/final-protfolio-only?type=design&node-id=1%3A2&mode=design&t=l9RyRRTqXcSIk4GX-1">
             <div
               className={style.icon}
-              style={{ background: "url(/figma.jpeg) center / cover" }}
+              style={{ background: "url(/icons/figma.jpeg) center / cover" }}
             />
           </Link>
           <Link href="https://velog.io/@55555-jyeon/posts">
             <div
               className={style.icon}
-              style={{ background: "url(/velog.jpeg) center / contain" }}
+              style={{ background: "url(/icons/velog.jpeg) center / contain" }}
             />
           </Link>
           <div
             className={style.icon}
-            style={{ background: "url(/phone.png) center / contain" }}
+            style={{ background: "url(/icons/phone.png) center / contain" }}
           />
           <div
             className={style.icon}
-            style={{ background: "url(/mail.svg) center / contain" }}
+            style={{ background: "url(/icons/mail.svg) center / contain" }}
           />
         </div>
       </div>
