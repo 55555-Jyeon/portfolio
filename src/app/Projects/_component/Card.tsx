@@ -4,12 +4,15 @@ import style from "./card.module.css";
 import Image from "next/image";
 import { useTransform, motion, useScroll, MotionValue } from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
 
 type CardProps = {
   title: string;
   description: string;
   src: string;
-  link: string;
+  github: string;
+  figma: string;
+  velog: string;
   color: string;
   i: number;
   progress: MotionValue<number>;
@@ -21,7 +24,9 @@ export default function Card({
   title,
   description,
   src,
-  link,
+  github,
+  figma,
+  velog,
   color,
   i,
   progress,
@@ -52,10 +57,33 @@ export default function Card({
         <div className={style.content}>
           <div className={style.desc}>
             <p>{description}</p>
-            <span>
-              <a href={""} target="_blank">
-                See more
-              </a>
+            <span className={style.iconBox}>
+              <Link href={github}>
+                <div
+                  className={style.icon}
+                  style={{
+                    background: "url(/icons/github.png) center / contain",
+                  }}
+                />
+              </Link>
+              <Link href={figma}>
+                <div
+                  className={style.icon}
+                  style={{
+                    background: "url(/icons/figma.jpeg) center / cover",
+                  }}
+                />
+              </Link>
+              {velog && (
+                <Link href={velog}>
+                  <div
+                    className={style.icon}
+                    style={{
+                      background: "url(/icons/velog.jpeg) center / contain",
+                    }}
+                  />
+                </Link>
+              )}
             </span>
           </div>
           {/* image */}
