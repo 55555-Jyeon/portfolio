@@ -12,22 +12,22 @@ export const navLinks: TNavLink[] = [
   },
   {
     title: "Projects",
-    href: "/",
+    href: "/Projects",
     src: "/images/menu02.jpeg",
   },
   {
     title: "Skills",
-    href: "/",
+    href: "/Skills",
     src: "/images/menu03.jpeg",
   },
   {
     title: "Developer_Value",
-    href: "/about",
+    href: "/Amy",
     src: "/images/menu04.jpeg",
   },
   {
     title: "About_Me",
-    href: "/",
+    href: "/Amy/AboutMe",
     src: "/images/menu05.jpg",
   },
 ];
