@@ -1,4 +1,22 @@
+.container {
+  position: relative;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.title {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+  font-weight: 700;
+  letter-spacing: 0.4vw;
+}
 .main {
   position: relative;
-  margin-top: 50vh;
+  margin-top: 80vh;
 }

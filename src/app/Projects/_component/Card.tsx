@@ -12,7 +12,7 @@ type CardProps = {
   src: string;
   github: string;
   figma: string;
-  velog: string;
+  velog?: string;
   color: string;
   i: number;
   progress: MotionValue<number>;
