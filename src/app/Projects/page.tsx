@@ -3,8 +3,9 @@
 import style from "./projects.module.css";
 import { projects } from "../_const/projectsData";
 import Card from "./_component/Card";
-import { motion, useScroll } from "framer-motion";
-import { useRef } from "react";
+import { useScroll } from "framer-motion";
+import { useEffect, useRef } from "react";
+import Lenis from "@studio-freight/lenis";
 
 export default function Projects() {
   const container = useRef(null);
@@ -13,10 +14,21 @@ export default function Projects() {
     offset: ["start start", "end end"],
   });
 
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    function raf(time: number) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  });
+
   return (
     <main ref={container} className={style.container}>
       <h1 className={style.title}>PROJECTS</h1>
-      <motion.div className={style.main}>
+      <div className={style.main}>
         {projects.map((project, index) => {
           const targetScale = 1 - (projects.length - index) * 0.05;
           return (
@@ -30,7 +42,7 @@ export default function Projects() {
             />
           );
         })}
-      </motion.div>
+      </div>
     </main>
   );
 }
