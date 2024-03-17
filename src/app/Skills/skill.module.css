@@ -1,0 +1,15 @@
+.main {
+  position: relative;
+  width: 100dvw;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  position: fixed;
+  font-size: 3vw;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}

@@ -86,8 +86,14 @@ body {
 }
 
 body {
+  position: relative;
+  top: 60px;
   color: #005134 !important;
   background-color: #fffcec !important;
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 
 a {

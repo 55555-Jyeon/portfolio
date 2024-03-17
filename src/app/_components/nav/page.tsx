@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import style from "./navbar.module.css";
 import { motion } from "framer-motion";
