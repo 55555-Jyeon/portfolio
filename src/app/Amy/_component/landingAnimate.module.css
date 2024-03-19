@@ -30,3 +30,17 @@
   width: inherit;
   height: inherit;
 }
+
+/* smaller mobile */
+@media screen and (max-width: 480px) {
+  .value {
+    font-size: 6vw;
+  }
+  .textbox {
+    width: 100%;
+    margin: 50px 0 0;
+  }
+  .textbox span {
+    font-size: 0.8vw;
+  }
+}

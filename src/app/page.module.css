@@ -41,16 +41,16 @@
     height: calc(100dvh - 34px);
   }
   .ImageContainer {
-    width: 120px;
-    height: 145px;
+    width: 160px;
+    height: 190px;
   }
   .profile {
-    width: 120px;
+    width: 160px;
     height: inherit;
   }
   .textbox {
-    width: 120px;
-    margin-top: 2px;
+    width: 160px;
+    margin-top: 4px;
   }
   .textbox p {
     font-size: 4px;

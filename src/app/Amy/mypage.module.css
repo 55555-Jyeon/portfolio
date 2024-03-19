@@ -53,3 +53,30 @@
   border-radius: 1vw;
   margin: 0 1.3vw;
 }
+
+/* smaller mobile */
+@media screen and (max-width: 480px) {
+  .main {
+    padding: 0 10%;
+  }
+  .textWrapper {
+    width: 100%;
+  }
+  .title,
+  .subTitle {
+    font-size: 4vw;
+  }
+  .subTitle {
+    padding: 30% 0 0;
+  }
+  .iconWrapper {
+    padding: 25% 0;
+  }
+  .iconWrapper p {
+    font-size: 3vw;
+  }
+  .icon {
+    width: 7vw;
+    height: 7vw;
+  }
+}

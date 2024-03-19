@@ -19,3 +19,7 @@
   position: relative;
   margin-top: 80vh;
 }
+
+/* smaller mobile */
+@media screen and (max-width: 480px) {
+}

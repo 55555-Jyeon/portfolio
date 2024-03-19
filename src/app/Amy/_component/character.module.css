@@ -15,3 +15,12 @@
   position: absolute;
   opacity: 0.1;
 }
+
+/* smaller mobile */
+@media screen and (max-width: 480px) {
+  .words {
+    max-width: 100%;
+    font-size: 3vw;
+    padding: 0%;
+  }
+}

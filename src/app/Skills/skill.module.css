@@ -13,3 +13,7 @@
   display: flex;
   justify-content: center;
 }
+
+/* smaller mobile */
+@media screen and (max-width: 480px) {
+}
