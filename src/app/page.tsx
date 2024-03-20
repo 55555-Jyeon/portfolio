@@ -20,6 +20,8 @@ export default function Home() {
               className={style.profile}
               loading="eager"
               alt="profile image"
+              width={400}
+              height={482}
             />
           </motion.div>
         </div>
