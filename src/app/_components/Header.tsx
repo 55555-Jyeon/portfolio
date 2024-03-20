@@ -2,7 +2,6 @@
 
 import { useRouter } from "next/navigation";
 import style from "./header.module.css";
-import Link from "next/link";
 import { Phone, MessageCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
@@ -53,6 +52,7 @@ export default function Header() {
             hasArrow
             openDelay={200}
             closeDelay={500}
+            mt={5}
           >
             <Phone color="#005134" size={16} strokeWidth={1.2} />
           </Tooltip>
@@ -64,6 +64,7 @@ export default function Header() {
             hasArrow
             openDelay={200}
             closeDelay={500}
+            mt={5}
           >
             <MessageCircle color="#005134" size={16} strokeWidth={1.2} />
           </Tooltip>
