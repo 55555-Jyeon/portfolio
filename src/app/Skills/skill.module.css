@@ -12,8 +12,19 @@
   font-weight: 600;
   display: flex;
   justify-content: center;
+  z-index: 11;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 /* smaller mobile */
 @media screen and (max-width: 480px) {
+  .hide {
+    display: none;
+  }
+}
+/* larger smartphones & tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .hide {
+    display: none;
+  }
 }
