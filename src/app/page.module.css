@@ -77,9 +77,3 @@
     font-size: 6px;
   }
 }
-/* larger tablets & laptop & small desktops */
-@media screen and (min-width: 769px) and (max-width: 1279px) {
-}
-/* larger desktops & monitors */
-@media screen and (min-width: 1280px) {
-}

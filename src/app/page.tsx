@@ -18,6 +18,7 @@ export default function Home() {
               onClick={() => router.push("/Amy")}
               src={profile}
               className={style.profile}
+              loading="eager"
               alt="profile image"
             />
           </motion.div>
