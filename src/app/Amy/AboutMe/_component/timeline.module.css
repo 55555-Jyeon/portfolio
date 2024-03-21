@@ -1,0 +1,13 @@
+.block {
+  width: 100%;
+}
+.block h1 {
+  font-size: 2.4vw;
+  font-weight: 200;
+}
+.innerbox {
+  width: 60vw;
+  height: 36vh;
+  margin: 2vw;
+  padding: 2vw;
+}
