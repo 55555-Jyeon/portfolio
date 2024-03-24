@@ -1,5 +1,6 @@
 .main {
   width: 100vw;
+  height: fit-content;
   position: relative;
   padding-top: 60px;
 }
@@ -8,8 +9,7 @@
   top: 0;
   left: 30%;
   width: 66%;
-  height: 1600px;
-  border: 1px solid salmon;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;

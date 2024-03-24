@@ -7,7 +7,29 @@
 }
 .innerbox {
   width: 60vw;
-  height: 36vh;
+  height: fit-content;
   margin: 2vw;
   padding: 2vw;
+}
+.innerbox div {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1vw;
+  margin: 0.8vw 0;
+  padding: 0.3vw 1vw;
+  background-color: #ffffff45;
+  border-radius: 0.3vw;
+  border: 1px solid white;
+}
+.innerbox div h2 {
+  font-size: 1.2vw;
+  font-weight: 200;
+  margin-right: 2vw;
+}
+.innerbox div p {
+  font-weight: 600;
+  margin: 0 1.2vw;
 }

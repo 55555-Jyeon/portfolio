@@ -7,11 +7,12 @@
 }
 .codebox {
   width: 60vw;
-  height: 36vh;
+  height: 32vh;
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 0.8vw;
   margin: 2vw;
   padding: 2vw;
+  font-size: 1vw;
 }
 .tab {
   margin-left: 4vw;

@@ -1,7 +1,7 @@
 .strap {
   position: fixed;
-  left: 6.5%;
-  top: -63.5%;
+  left: 9%;
+  top: -35%;
   z-index: 15;
 }
 .container {
@@ -26,6 +26,9 @@
   font-size: 1vw;
   color: #555;
 }
+.imageContainer img {
+  width: 13vw;
+}
 .textbox {
   display: flex;
   flex-direction: column;
@@ -40,4 +43,19 @@
 .textbox h1:nth-of-type(1) {
   margin-top: 1.6vw;
   color: #e8ccda;
+}
+.iconbox {
+  position: fixed;
+  bottom: 10%;
+  left: 4%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.iconContainer {
+  width: 3vw;
+  height: 3vw;
+  overflow: hidden;
+  border-radius: 50%;
 }
