@@ -36,4 +36,9 @@
     width: 100%;
     padding: 0 10%;
   }
+} /* larger desktops & monitors */
+@media screen and (min-width: 1280px) and (max-width: 1919px) {
+  .main {
+    padding: 6vw 0 10vw;
+  }
 }

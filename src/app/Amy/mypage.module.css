@@ -61,13 +61,15 @@
   }
   .textWrapper {
     width: 100%;
+    padding: 10vw 0 20vw;
   }
-  .title,
+  .title {
+    font-size: 4vw;
+    margin-top: 10vw;
+  }
   .subTitle {
     font-size: 4vw;
-  }
-  .subTitle {
-    padding: 30% 0 0;
+    padding: 20vw 0 0;
   }
   .iconWrapper {
     padding: 25% 0;

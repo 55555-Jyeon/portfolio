@@ -36,7 +36,7 @@ const LandingAnimate = () => {
             y: 0,
             width: "100dvw",
             height: 600,
-            transition: { delay: 0.2, ...transition },
+            transition: { delay: 0, ...transition },
           }}
           className={style.ImageContainer}
         >
