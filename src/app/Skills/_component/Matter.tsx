@@ -52,18 +52,18 @@ class SkillComponent extends Component {
     const canvas = this.sceneRef.current;
     if (!canvas) return;
 
-    const { width, height } = canvas.getBoundingClientRect();
+    const { innerWidth: width, innerHeight: height } = window;
+
+    canvas.width = width;
+    canvas.height = height;
+
     this.engine = Matter.Engine.create();
 
-    const ground = Matter.Bodies.rectangle(
-      width / 2,
-      height - 0.75 * height,
-      width,
-      10,
-      {
-        isStatic: true,
-      }
-    );
+    const ground = Matter.Bodies.rectangle(width / 2, height - 20, width, 40, {
+      isStatic: true,
+    });
+
+    Matter.World.add(this.engine.world, [ground]);
     const wallLeft = Matter.Bodies.rectangle(0, height / 2, 10, height, {
       isStatic: true,
     });
@@ -74,7 +74,7 @@ class SkillComponent extends Component {
 
     for (let i = 0; i < this.skillList.length; i++) {
       const x = Math.random() * width;
-      const y = -200;
+      const y = (Math.random() * -height) / 2; // 초기 y 좌표를 화면의 위쪽으로 조정
       const word = this.skillList[i];
       const newWord: Word = {
         body: Matter.Bodies.rectangle(x, y, word.length * 15, 30),
@@ -140,16 +140,35 @@ class SkillComponent extends Component {
       ctx.save();
       ctx.translate(pos.x, pos.y);
       ctx.rotate(angle);
-      ctx.lineWidth = 3;
 
-      const textSize = 20;
+      let textSize: number;
+      let rectWidth: number;
+      let rectHeight: number;
+      let borderRadius: number;
+
+      if (width <= 768) {
+        textSize = 15;
+        rectWidth = textSize + 20;
+        rectHeight = 30;
+        borderRadius = 20;
+      } else {
+        // default
+        textSize = 30;
+        rectWidth = textSize + 20;
+        rectHeight = 50;
+        borderRadius = 30;
+      }
+
       ctx.font = `${textSize}px sans-serif`;
-
-      const textWidth = ctx.measureText(word.word.toUpperCase()).width;
+      const textMeasure = ctx.measureText(word.word.toUpperCase());
+      const textWidth = textMeasure.width;
       const textHeight = textSize;
 
-      const rectWidth = textWidth + 20;
-      const rectHeight = textHeight + 20;
+      const dynamicRectWidth = textWidth + 40;
+      const dynamicRectHeight = textHeight + 30;
+
+      rectWidth = dynamicRectWidth;
+      rectHeight = dynamicRectHeight;
 
       ctx.beginPath();
 
@@ -180,7 +199,6 @@ class SkillComponent extends Component {
       }
       ctx.strokeStyle = "#005134";
       ctx.lineWidth = 2;
-      const borderRadius = 20;
       ctx.moveTo(-rectWidth / 2 + borderRadius, -rectHeight / 2);
       ctx.arcTo(
         rectWidth / 2,
