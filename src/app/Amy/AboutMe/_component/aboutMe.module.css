@@ -37,3 +37,27 @@
 .gray {
   color: #999999;
 }
+
+/* smaller mobile */
+@media screen and (max-width: 480px) {
+}
+/* larger smartphones & tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .block {
+    width: 80%;
+    height: fit-content;
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .block h1 {
+    font-size: 3.4vw;
+  }
+  .codebox {
+    height: 20vh;
+    font-size: 1.8vw;
+    padding: 3vw 0 0 6vw;
+  }
+}

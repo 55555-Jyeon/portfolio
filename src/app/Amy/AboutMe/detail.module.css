@@ -14,3 +14,18 @@
   flex-direction: column;
   align-items: center;
 }
+
+/* smaller mobile */
+@media screen and (max-width: 480px) {
+}
+/* larger smartphones & tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .content {
+    position: relative;
+    top: 40vw;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 0 10%;
+  }
+}
