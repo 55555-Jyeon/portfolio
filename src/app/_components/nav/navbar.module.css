@@ -1,5 +1,6 @@
 .nav {
   position: fixed;
+  top: 60px;
   width: 100dvw;
   display: flex;
   justify-content: center;
@@ -22,6 +23,9 @@
 
 /* smaller mobile */
 @media screen and (max-width: 480px) {
+  .nav {
+    top: 26px;
+  }
   .wrapper {
     margin-left: 16px;
     margin-bottom: 26px;
@@ -29,6 +33,9 @@
 }
 /* larger smartphones & tablets */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  .nav {
+    top: 40px;
+  }
   .wrapper {
     margin-left: 20px;
     margin-bottom: 36px;
