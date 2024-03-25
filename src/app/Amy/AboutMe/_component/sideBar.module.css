@@ -23,3 +23,22 @@
   overflow: hidden;
   border-radius: 50%;
 }
+
+/* smaller mobile */
+@media screen and (max-width: 480px) {
+  .imageContainer {
+    top: -16%;
+  }
+  .iconbox {
+    bottom: 10%;
+  }
+}
+/* larger smartphones & tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .imageContainer {
+    top: -16%;
+  }
+  .iconbox {
+    bottom: 10%;
+  }
+}
