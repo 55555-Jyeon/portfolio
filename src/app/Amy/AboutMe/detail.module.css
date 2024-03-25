@@ -2,7 +2,7 @@
   width: 100vw;
   height: fit-content;
   position: relative;
-  padding-top: 6vw;
+  padding: 6vw 0 50vw;
 }
 .content {
   position: relative;
@@ -17,6 +17,14 @@
 
 /* smaller mobile */
 @media screen and (max-width: 480px) {
+  .content {
+    position: relative;
+    top: 40vw;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 0 10%;
+  }
 }
 /* larger smartphones & tablets */
 @media screen and (min-width: 481px) and (max-width: 768px) {

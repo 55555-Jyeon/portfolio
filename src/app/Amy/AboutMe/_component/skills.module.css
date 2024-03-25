@@ -36,6 +36,27 @@
 
 /* smaller mobile */
 @media screen and (max-width: 480px) {
+  .block {
+    width: 80%;
+    height: fit-content;
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .block h1 {
+    font-size: 3.4vw;
+  }
+  .innerbox {
+    width: 70vw;
+  }
+  .innerbox div {
+    font-size: 1.8vw;
+  }
+  .innerbox div h2 {
+    font-size: 2.2vw;
+  }
 }
 /* larger smartphones & tablets */
 @media screen and (min-width: 481px) and (max-width: 768px) {

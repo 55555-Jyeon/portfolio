@@ -26,11 +26,31 @@
 
 /* smaller mobile */
 @media screen and (max-width: 480px) {
+  .wrapper {
+    position: fixed;
+    width: 100%;
+    height: 30vh;
+    top: 0%;
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
   .imageContainer {
     top: -16%;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .iconbox {
-    bottom: 10%;
+    bottom: -6%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .iconContainer {
+    margin: 0 1.5vw;
   }
 }
 /* larger smartphones & tablets */
