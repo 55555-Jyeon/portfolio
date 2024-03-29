@@ -82,10 +82,16 @@
     margin: 0 1.5vw;
   }
 }
+/* middle */
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  .imageContainer {
+    top: -50%;
+  }
+}
 /* larger desktops & monitors */
 @media screen and (min-width: 1280px) and (max-width: 1919px) {
   .imageContainer {
-    top: -40%;
+    top: -50%;
   }
 }
 /* larger than standard: imac */

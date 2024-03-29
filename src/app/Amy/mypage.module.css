@@ -82,3 +82,6 @@
     height: 7vw;
   }
 }
+/* larger smartphones & tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
