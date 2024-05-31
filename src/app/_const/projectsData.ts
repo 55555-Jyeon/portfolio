@@ -53,13 +53,13 @@ export const projects: TProjectData = [
     color: "#88A28D",
   },
   {
-    title: "Mobigram",
+    title: "YeoGi(여기, 여행을 기록하다)",
     description:
-      "NextJS를 공부하면서 제대로 이해했는지 활용해보기 위해 진행한 토이 프로젝트입니다.여태까지 배운 내용의 기능을 활용하기엔 SNS 페이지가 제격이라 판단해 인스타그램을 참고해 mobigram 디자인을 했습니다.",
+      "NextJS를 기반으로 디자이너, 프론트엔드, 백엔드 개발자와 함께 작업한 프로젝트입니다. 여행에 대한 정보를 네이버 카페에서 주로 찾아온 저에겐 여행지가 바뀔 때마다 새로 가입해야 된다는 점이 불편했습니다. '여기'는 전 세계의 가국의 여행 정보를 공유하는 커뮤니티로 사용자의 여행 관련 정보를 정리해서 볼 수 있습니다.",
     src: "project05.svg",
-    github: "https://github.com/55555-Jyeon/mobigram",
+    github: "https://github.com/mobi-projects/yeogi-client",
     figma:
-      "https://www.figma.com/file/DtNSbeeDDst3vZ9INAwiZ7/mobigram?type=design&node-id=0%3A1&mode=design&t=9AOxCJhkOppodKS6-1",
+      "https://www.figma.com/design/TQX56AWMGdAT5DYDpmWKBk/YeoGi?node-id=0-1&t=wVruCvoqgm2MsTXe-1",
     color: "#67B6FB",
   },
 ];
