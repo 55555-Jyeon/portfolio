@@ -12,6 +12,7 @@ import { Tooltip } from "@chakra-ui/react";
 export default function Header() {
   const router = useRouter();
   const [isActive, setIsActive] = useState(false);
+
   return (
     <>
       <nav className={style.container}>
@@ -70,7 +71,9 @@ export default function Header() {
           </Tooltip>
         </motion.div>
       </nav>
-      <AnimatePresence mode="wait">{isActive && <Navbar />}</AnimatePresence>
+      <AnimatePresence mode="wait">
+        {isActive && <Navbar setIsActive={setIsActive} />}
+      </AnimatePresence>
     </>
   );
 }

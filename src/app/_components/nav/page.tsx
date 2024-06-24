@@ -1,20 +1,19 @@
 "use client";
 
-import { useState } from "react";
 import style from "./navbar.module.css";
 import { motion } from "framer-motion";
 import { height } from "@/app/_const/anim";
 import Body from "./_component/Body";
 import Footer from "./_component/Footer";
 import Thumbnail from "./_component/Thumbnail";
+import { Dispatch, SetStateAction, useState } from "react";
 
-interface LinkState {
-  isActive: boolean;
-  index: number;
-}
+export type NavbarProps = {
+  setIsActive: Dispatch<SetStateAction<boolean>>;
+};
 
-export default function Navbar() {
-  const [selectedLink, setSelectedLink] = useState<LinkState>({
+export default function Navbar({ setIsActive }: NavbarProps) {
+  const [selectedLink, setSelectedLink] = useState({
     isActive: false,
     index: 0,
   });
@@ -29,7 +28,11 @@ export default function Navbar() {
     >
       <div className={style.wrapper}>
         <div className={style.contents}>
-          <Body selectedLink={selectedLink} setSelectedLink={setSelectedLink} />
+          <Body
+            selectedLink={selectedLink}
+            setSelectedLink={setSelectedLink}
+            setIsActive={setIsActive}
+          />
           <Footer />
         </div>
         <Thumbnail
