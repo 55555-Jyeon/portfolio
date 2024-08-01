@@ -2,23 +2,10 @@
 
 import style from "./card.module.css";
 import Image from "next/image";
-import { useTransform, motion, useScroll, MotionValue } from "framer-motion";
+import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import Link from "next/link";
-
-type CardProps = {
-  title: string;
-  description: string;
-  src: string;
-  github: string;
-  figma: string;
-  velog?: string;
-  color: string;
-  i: number;
-  progress: MotionValue<number>;
-  range: number[];
-  targetScale: number;
-};
+import { CardProps } from "./card.type";
 
 export default function Card({
   title,

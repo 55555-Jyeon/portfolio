@@ -6,11 +6,8 @@ import { height } from "@/app/_const/anim";
 import Body from "./_component/Body";
 import Footer from "./_component/Footer";
 import Thumbnail from "./_component/Thumbnail";
-import { Dispatch, SetStateAction, useState } from "react";
-
-export type NavbarProps = {
-  setIsActive: Dispatch<SetStateAction<boolean>>;
-};
+import { useState } from "react";
+import { NavbarProps } from "./type";
 
 export default function Navbar({ setIsActive }: NavbarProps) {
   const [selectedLink, setSelectedLink] = useState({

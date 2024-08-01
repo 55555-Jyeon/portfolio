@@ -4,18 +4,7 @@ import { navLinks } from "@/app/_const/links";
 import { getCharacter } from "@/app/_animation/ByCharacter";
 import { motion } from "framer-motion";
 import { blur } from "@/app/_const/anim";
-import { Dispatch, SetStateAction } from "react";
-
-export type BodyProps = {
-  selectedLink: {
-    isActive: boolean;
-    index: number;
-  };
-  setSelectedLink: Dispatch<
-    SetStateAction<{ isActive: boolean; index: number }>
-  >;
-  setIsActive: Dispatch<SetStateAction<boolean>>;
-};
+import { BodyProps } from "./type";
 
 export default function Body({
   selectedLink,

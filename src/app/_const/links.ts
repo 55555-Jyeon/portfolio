@@ -1,19 +1,15 @@
-export type TNavLink = {
-  title: string;
-  href: string;
-  src: string;
-};
+import { NavLinkType } from "./type";
 
-export const navLinks: TNavLink[] = [
+export const navLinks: NavLinkType[] = [
   {
     title: "Home",
     href: "/",
-    src: "/images/menu01.jpeg",
+    src: "/images/nav/menu01.jpeg",
   },
   {
     title: "Projects",
     href: "/Projects",
-    src: "/images/menu02.jpeg",
+    src: "/images/nav/menu02.jpeg",
   },
   {
     title: "Skills",
@@ -23,11 +19,11 @@ export const navLinks: TNavLink[] = [
   {
     title: "Developer_Value",
     href: "/Amy",
-    src: "/images/menu04.jpeg",
+    src: "/images/nav/menu04.jpeg",
   },
   {
     title: "About_Me",
     href: "/Amy/AboutMe",
-    src: "/images/menu05.jpg",
+    src: "/images/nav/menu05.jpg",
   },
 ];

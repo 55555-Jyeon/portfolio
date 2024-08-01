@@ -1,19 +1,20 @@
 import Image from "next/image";
 import style from "./sideBar.module.css";
 import Link from "next/link";
-import { url } from "inspector";
 
 export default function SideBar() {
   return (
     <div className={style.wrapper}>
-      <div className={style.imageContainer}>
-        <Image
-          className={style.image}
-          width={500}
-          height={700}
-          src="/images/IDcard.svg"
-          alt="id card"
-        />
+      <div className={style.container}>
+        <div className={style.imageContainer}>
+          <Image
+            className={style.image}
+            width={500}
+            height={700}
+            src="/images/IDcard.svg"
+            alt="id card"
+          />
+        </div>
         <div className={style.iconbox}>
           <Link href="https://velog.io/@55555-jyeon/posts">
             <div

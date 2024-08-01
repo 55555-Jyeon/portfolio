@@ -3,17 +3,13 @@ import style from "./thumbnail.module.css";
 import { motion } from "framer-motion";
 import { opacity } from "@/app/_const/anim";
 import { navLinks } from "@/app/_const/links";
-
-interface LinkState {
-  isActive: boolean;
-  index: number;
-}
+import { LinkStateType } from "./type";
 
 export default function Thumbnail({
   selectedLink,
   isActive,
 }: {
-  selectedLink: LinkState;
+  selectedLink: LinkStateType;
   isActive: boolean;
 }) {
   return (

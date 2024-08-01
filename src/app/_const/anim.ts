@@ -1,48 +1,10 @@
 import { Variants } from "framer-motion";
+import { ByCharacter, Transition, Animation } from "./type";
 
-type Transition = {
-  duration: number;
-  ease?: number[];
+export const transition: Transition = {
+  duration: 1,
+  ease: [0.76, 0, 0.24, 1],
 };
-
-type Animation = {
-  // any : Any CSS property
-  initial: {
-    [key: string]: any;
-  };
-  open?: {
-    [key: string]: any;
-    transition: Transition;
-  };
-  enter?: {
-    [key: string]: any;
-    transition: Transition;
-  };
-  exit?: {
-    [key: string]: any;
-    transition: Transition;
-  };
-  closed?: {
-    [key: string]: any;
-    transition: Transition;
-  };
-};
-
-type ByCharacter = {
-  initial: {
-    [key: string]: any;
-  };
-  enter: (i: number[]) => {
-    [key: string]: any;
-    transition: Transition;
-  };
-  exit: (i: number[]) => {
-    [key: string]: any;
-    transition: Transition;
-  };
-};
-
-export const transition: Transition = { duration: 1, ease: [0.76, 0, 0.24, 1] };
 
 export const opacity: Animation = {
   initial: {
