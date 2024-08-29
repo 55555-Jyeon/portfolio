@@ -1,10 +1,10 @@
 "use client";
 
-import { ValueTitle } from "@/app/_const/DeveloperValue";
+import { transition } from "@/app/_/const/animation-effects";
 import style from "./landingAnimate.module.css";
 import { motion } from "framer-motion";
-import { transition } from "@/app/_const/anim";
-import { getCharacter } from "@/app/_animation/ByCharacter";
+import { getCharacter } from "@/app/_/animation/ByCharacter";
+import { ValueTitle } from "@/app/_/const/developer-value";
 
 const LandingAnimate = () => {
   return (

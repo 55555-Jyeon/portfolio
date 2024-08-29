@@ -2,7 +2,7 @@ import Image from "next/image";
 import style from "./sideBar.module.css";
 import Link from "next/link";
 
-export default function SideBar() {
+const SideBar = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.container}>
@@ -38,4 +38,5 @@ export default function SideBar() {
       </div>
     </div>
   );
-}
+};
+export default SideBar;

@@ -1,17 +1,11 @@
 import Image from "next/image";
 import style from "./thumbnail.module.css";
 import { motion } from "framer-motion";
-import { opacity } from "@/app/_const/anim";
-import { navLinks } from "@/app/_const/links";
-import { LinkStateType } from "./type";
+import { ThumbnailProps } from "./type";
+import { opacity } from "@/app/_/const/animation-effects";
+import { navLinks } from "@/app/_/const/links";
 
-export default function Thumbnail({
-  selectedLink,
-  isActive,
-}: {
-  selectedLink: LinkStateType;
-  isActive: boolean;
-}) {
+const Thumbnail = ({ selectedLink, isActive }: ThumbnailProps) => {
   return (
     <motion.div
       variants={opacity}
@@ -26,4 +20,5 @@ export default function Thumbnail({
       />
     </motion.div>
   );
-}
+};
+export default Thumbnail;

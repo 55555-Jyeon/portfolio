@@ -2,23 +2,10 @@
 
 import { useRef } from "react";
 import style from "./character.module.css";
-import { motion, MotionValue, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { CharacterProps, CharactersProps, WordProps } from "./type";
 
-type Props = {
-  value: string;
-};
-type WordProps = {
-  children: string;
-  range: number[];
-  progress: MotionValue<number>;
-};
-type CharacterProps = {
-  children: string;
-  range: number[];
-  progress: MotionValue<number>;
-};
-
-export default function Characters({ value }: Props) {
+export const Characters = ({ value }: CharactersProps) => {
   const element = useRef(null);
   const { scrollYProgress } = useScroll({
     target: element,
@@ -39,7 +26,7 @@ export default function Characters({ value }: Props) {
       })}
     </p>
   );
-}
+};
 
 const Word = ({ children, range, progress }: WordProps) => {
   const characters = children.split(""); // 알파벳별 animation

@@ -6,7 +6,7 @@ import profile from "../../public/profile.jpg";
 import { useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 
-export default function Home() {
+const Home = () => {
   const router = useRouter();
 
   return (
@@ -32,4 +32,5 @@ export default function Home() {
       </main>
     </AnimatePresence>
   );
-}
+};
+export default Home;

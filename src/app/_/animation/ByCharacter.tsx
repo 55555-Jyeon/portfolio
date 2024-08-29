@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { translate } from "@/app/_const/anim";
+import { translate } from "../const/animation-effects";
 
 // animation(by character)
 export const getCharacter = (title: string) => {

@@ -1,6 +1,6 @@
 import style from "./timeline.module.css";
 
-export default function Timeline() {
+const Timeline = () => {
   return (
     <div className={style.block}>
       <h1>TimeLine</h1>
@@ -57,4 +57,5 @@ export default function Timeline() {
       </div>
     </div>
   );
-}
+};
+export default Timeline;

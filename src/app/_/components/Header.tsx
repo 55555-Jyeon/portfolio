@@ -6,10 +6,10 @@ import { Phone, MessageCircle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import Navbar from "./nav/page";
-import { opacity } from "../_const/anim";
 import { Tooltip } from "@chakra-ui/react";
+import { opacity } from "../const/animation-effects";
 
-export default function Header() {
+const Header = () => {
   const router = useRouter();
   const [isActive, setIsActive] = useState(false);
 
@@ -76,4 +76,5 @@ export default function Header() {
       </AnimatePresence>
     </>
   );
-}
+};
+export default Header;

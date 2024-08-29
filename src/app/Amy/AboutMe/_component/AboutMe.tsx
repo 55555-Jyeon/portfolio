@@ -1,6 +1,6 @@
 import style from "./aboutMe.module.css";
 
-export default function AboutMe() {
+const AboutMe = () => {
   return (
     <div className={style.block}>
       <h1>About Me</h1>
@@ -55,4 +55,5 @@ export default function AboutMe() {
       </div>
     </div>
   );
-}
+};
+export default AboutMe;

@@ -7,7 +7,7 @@ import { useRef } from "react";
 import Link from "next/link";
 import { CardProps } from "./card.type";
 
-export default function Card({
+const Card = ({
   title,
   description,
   src,
@@ -19,7 +19,7 @@ export default function Card({
   progress,
   range,
   targetScale,
-}: CardProps) {
+}: CardProps) => {
   const container = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -83,4 +83,5 @@ export default function Card({
       </motion.div>
     </div>
   );
-}
+};
+export default Card;

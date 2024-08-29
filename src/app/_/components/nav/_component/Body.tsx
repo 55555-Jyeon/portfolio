@@ -1,16 +1,11 @@
 import style from "./body.module.css";
 import Link from "next/link";
-import { navLinks } from "@/app/_const/links";
-import { getCharacter } from "@/app/_animation/ByCharacter";
 import { motion } from "framer-motion";
-import { blur } from "@/app/_const/anim";
 import { BodyProps } from "./type";
+import { navLinks } from "@/app/_/const/links";
+import { getCharacter } from "@/app/_/animation/ByCharacter";
 
-export default function Body({
-  selectedLink,
-  setSelectedLink,
-  setIsActive,
-}: BodyProps) {
+const Body = ({ selectedLink, setSelectedLink, setIsActive }: BodyProps) => {
   return (
     <div className={style.body}>
       {navLinks.map((link, index) => {
@@ -39,4 +34,5 @@ export default function Body({
       })}
     </div>
   );
-}
+};
+export default Body;

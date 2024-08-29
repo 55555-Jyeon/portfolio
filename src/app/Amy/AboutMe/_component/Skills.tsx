@@ -1,6 +1,6 @@
 import style from "./skills.module.css";
 
-export default function Skills() {
+const Skills = () => {
   return (
     <div className={style.block}>
       <h1>Skills</h1>
@@ -51,4 +51,5 @@ export default function Skills() {
       </div>
     </div>
   );
-}
+};
+export default Skills;

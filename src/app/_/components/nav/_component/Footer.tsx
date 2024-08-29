@@ -1,8 +1,8 @@
-import { translate } from "@/app/_const/anim";
+import { translate } from "@/app/_/const/animation-effects";
 import style from "./footer.module.css";
 import { motion } from "framer-motion";
 
-export default function Footer() {
+const Footer = () => {
   return (
     <div className={style.footer}>
       <ul>
@@ -51,4 +51,5 @@ export default function Footer() {
       </ul>
     </div>
   );
-}
+};
+export default Footer;

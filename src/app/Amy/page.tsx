@@ -2,12 +2,12 @@
 
 import style from "./mypage.module.css";
 import { motion } from "framer-motion";
-import Characters from "./_component/Character";
 import LandingAnimate from "./_component/LandingAnimate";
-import { Desc, One, Three, Two } from "../_const/DeveloperValue";
+import { Desc, One, Three, Two } from "../_/const/developer-value";
 import Link from "next/link";
+import { Characters } from "./_component/Character";
 
-export default function Mypage() {
+const Mypage = () => {
   return (
     <motion.main
       initial="initial"
@@ -62,4 +62,5 @@ export default function Mypage() {
       </div>
     </motion.main>
   );
-}
+};
+export default Mypage;

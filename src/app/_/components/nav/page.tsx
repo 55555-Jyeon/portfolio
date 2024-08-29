@@ -2,14 +2,14 @@
 
 import style from "./navbar.module.css";
 import { motion } from "framer-motion";
-import { height } from "@/app/_const/anim";
 import Body from "./_component/Body";
 import Footer from "./_component/Footer";
 import Thumbnail from "./_component/Thumbnail";
 import { useState } from "react";
 import { NavbarProps } from "./type";
+import { height } from "../../const/animation-effects";
 
-export default function Navbar({ setIsActive }: NavbarProps) {
+const Navbar = ({ setIsActive }: NavbarProps) => {
   const [selectedLink, setSelectedLink] = useState({
     isActive: false,
     index: 0,
@@ -39,4 +39,5 @@ export default function Navbar({ setIsActive }: NavbarProps) {
       </div>
     </motion.div>
   );
-}
+};
+export default Navbar;

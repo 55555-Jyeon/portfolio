@@ -1,13 +1,13 @@
 "use client";
 
 import style from "./projects.module.css";
-import { projects } from "../_const/projectsData";
+import { projects } from "../_/const/project-data";
 import Card from "./_component/Card";
 import { useScroll } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
 
-export default function Projects() {
+const Projects = () => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -45,4 +45,5 @@ export default function Projects() {
       </div>
     </main>
   );
-}
+};
+export default Projects;

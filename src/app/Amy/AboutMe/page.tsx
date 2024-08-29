@@ -4,7 +4,7 @@ import Skills from "./_component/Skills";
 import Timeline from "./_component/Timeline";
 import style from "./detail.module.css";
 
-export default function DetailInfo() {
+const DetailInfo = () => {
   return (
     <div className={style.main}>
       <SideBar />
@@ -15,4 +15,5 @@ export default function DetailInfo() {
       </div>
     </div>
   );
-}
+};
+export default DetailInfo;

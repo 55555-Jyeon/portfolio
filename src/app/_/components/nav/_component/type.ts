@@ -15,3 +15,8 @@ export type LinkStateType = {
   isActive: boolean;
   index: number;
 };
+
+export type ThumbnailProps = {
+  selectedLink: LinkStateType;
+  isActive: boolean;
+};
